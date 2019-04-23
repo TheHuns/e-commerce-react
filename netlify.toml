@@ -2,7 +2,7 @@
 [build]
   command = "npm run build"
   functions = "functions"
-  publish = "."
+  publish = "build/"
 
 ## Uncomment to use this redirect for Single Page Applications. 
 ## Not needed for static site generators.
