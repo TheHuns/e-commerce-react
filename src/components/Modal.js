@@ -23,6 +23,13 @@ export default class Modal extends Component {
                       id="modal"
                       className="col-8 mx-auto col-md-6 col-lg-4 text-center text-capitalize p-5"
                     >
+                      <div
+                        id="close-button"
+                        className="btn btn-black ml-auto"
+                        onClick={() => closeModal()}
+                      >
+                        X
+                      </div>
                       <h5>item added to the cart</h5>
                       <img src={img} className="img-fluid" alt="product" />
                       <h5>{title}</h5>
@@ -61,5 +68,10 @@ const ModalContainer = styled.div`
   justify-content: center;
   #modal {
     background: var(--mainWhite);
+  }
+  #close-button {
+    position: absolute;
+    top: 3%;
+    right: 5%;
   }
 `;
